@@ -11,7 +11,6 @@ import { DynamicGradientComponent } from '@shared/ui/dynamic-gradient/dynamic-gr
     RouterLink,
     SocialShareComponent,
     BuyOptionsComponent,
-    TitleCasePipe,
     DynamicGradientComponent,
   ],
   templateUrl: './blocks-page.component.html',

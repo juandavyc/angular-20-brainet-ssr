@@ -5,7 +5,6 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { homeConfig } from '../../../home-page/configs/home.config';
 import { Products } from '../../../home-page/interfaces';
 import { RouterLink } from '@angular/router';
-import { TitleCasePipe } from '@angular/common';
 import { DynamicGradientComponent } from '@shared/ui/dynamic-gradient/dynamic-gradient.component';
 
 @Component({
@@ -15,7 +14,6 @@ import { DynamicGradientComponent } from '@shared/ui/dynamic-gradient/dynamic-gr
     AdvancedFormComponent,
     PaginationComponent,
     RouterLink,
-    TitleCasePipe,
     DynamicGradientComponent,
   ],
   templateUrl: './products-page.component.html',

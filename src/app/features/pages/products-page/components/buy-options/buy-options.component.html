@@ -1,0 +1,57 @@
+<div class="flex flex-col gap-3">
+  <div class="flex md:flex-row flex-col gap-3">
+    <fieldset class="fieldset w-full">
+      <legend class="fieldset-legend text-base-content/50">Horas / Sesiones</legend>
+      <select class="select w-full">
+        <option>1 Hora</option>
+        <option>2 Horas</option>
+        <option>3 Horas</option>
+        <option>5 Horas (Pack)</option>
+        <option>10 Horas (Pack + Descuento)</option>
+      </select>
+    </fieldset>
+    <fieldset class="fieldset w-full">
+      <legend class="fieldset-legend text-base-content/50">Método de pago / Intercambio</legend>
+      <select class="select w-full">
+        <option value="creditos">Créditos BrainNet (Recomendado)</option>
+        <option value="intercambio">Intercambio Directo de Habilidades</option>
+        <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+        <option value="paypal">PayPal</option>
+      </select>
+    </fieldset>
+  </div>
+  <fieldset class="fieldset">
+    <legend class="fieldset-legend text-base-content/50">
+      Acción
+    </legend>
+    <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
+      <button class="btn btn-neutral">
+        <i class="fa-solid fa-arrow-right-long"></i>
+        Intercambiar Créditos
+      </button>
+      <button class="btn" disabled>
+        Añadir a favoritos
+      </button>
+    </div>
+  </fieldset>
+  <fieldset class="fieldset">
+    <legend class="fieldset-legend text-base-content/50 p-1">
+      Garantía de Calidad
+    </legend>
+    <div class="flex flex-row gap-3">
+      <i class="fa-solid fa-shield-halved text-neutral/50 text-2xl"></i>
+      <i class="fa-solid fa-user-check text-neutral/50 text-2xl"></i>
+      <i class="fa-solid fa-star text-yellow-500 text-2xl"></i>
+    </div>
+  </fieldset>
+  <fieldset class="fieldset">
+    <legend class="fieldset-legend text-base-content/50">
+      Importante
+    </legend>
+    <ul class="list-disc pl-6 mt-2 space-y-1 marker:text-neutral/50">
+      <li>El intercambio se realiza de forma inmediata tras la confirmación mutua.</li>
+      <li>Asegúrate de coordinar el horario con el tutor antes de redimir tus créditos.</li>
+      <li>Puedes cancelar la sesión hasta 24 horas antes sin penalización de créditos.</li>
+    </ul>
+  </fieldset>
+</div>

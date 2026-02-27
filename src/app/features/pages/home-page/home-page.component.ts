@@ -1,0 +1,23 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { HeroComponent } from './components/hero/hero.component';
+import { HighlightsComponent } from './components/highlights/highlights.component';
+import { StatsComponent } from './components/stats/stats.component';
+import { ProductsComponent } from './components/products/products.component';
+import { BenefitsComponent } from './components/benefits/benefits.component';
+
+@Component({
+  selector: 'app-home-page',
+  imports: [
+    HeroComponent,
+    StatsComponent,
+    HighlightsComponent,
+    ProductsComponent,
+    BenefitsComponent,
+  ],
+  templateUrl: './home-page.component.html',
+  styleUrl: './home-page.component.css',
+  //changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class HomePageComponent {
+
+}

@@ -1,0 +1,103 @@
+<div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+  <div class="col-span-full">
+    <div class="flex flex-row gap-3 justify-between">
+      <a class="btn btn-neutral" [routerLink]="['/tutorials']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Volver
+      </a>
+      <social-share />
+    </div>
+  </div>
+  <div class="col-span-full">
+    <div class="border-t border-dashed text-neutral/45 h-[1px]"></div>
+  </div>
+  <div class="col-span-full">
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-semibold">
+      Ciencias Exactas
+    </h1>
+  </div>
+
+  <dynamic-gradient [seed]="'Ciencias Exactas'" class="w-full h-auto object-contain rounded-box shadow-sm" />
+
+  <buy-options />
+  <div class="col-span-full">
+    <div class="divider"></div>
+  </div>
+  <div class="col-span-full">
+    <div class="tabs tabs-lift">
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Descripción" checked="checked" />
+      <div class="tab-content bg-base-100 border-base-300 p-6">
+        <div class="flex flex-col gap-5">
+          <p class="whitespace-pre-line text-lg">
+            Domina el <span class="font-semibold text-neutral">Cálculo, Física y Estadística</span>. Enfócate en la resolución de ejercicios
+            complejos, comprensión de conceptos fundamentales y <span class="font-semibold">preparación intensiva para parciales</span> y
+            exámenes finales.
+          </p>
+
+          <section class="flex flex-col justify-center items-center px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Metodología de Estudio</h2>
+            <ul class="steps sm:steps-horizontal steps-vertical">
+              <li class="step step-neutral">
+                Diagnóstico de Vacíos
+              </li>
+              <li class="step step-neutral">
+                Refuerzo Teórico
+              </li>
+              <li class="step step-neutral">
+                Práctica Guiada
+              </li>
+              <li class="step step-neutral">
+                Simulacro de Examen
+              </li>
+            </ul>
+          </section>
+
+          <h3 class="text-xl font-bold">Áreas de Especialidad</h3>
+          <ul class="list bg-neutral/10 rounded-box shadow-md">
+            <li class="list-row"><strong>Matemáticas:</strong> Cálculo Diferencial, Integral y Multivariado, Álgebra Lineal.</li>
+            <li class="list-row"><strong>Física:</strong> Mecánica Clásica, Electromagnetismo, Termodinámica.</li>
+            <li class="list-row"><strong>Estadística:</strong> Probabilidad, Inferencia Estadística, Análisis de Datos.</li>
+            <li class="list-row"><strong>Enfoque:</strong> Resolución de problemas paso a paso y uso de herramientas como
+              WolframAlpha/Matlab.</li>
+          </ul>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="card bg-info/10">
+              <div class="card-body">
+                <h3 class="card-title"> Éxito Académico</h3>
+                <p>Nuestra meta es que no solo pases la materia, sino que entiendas la lógica detrás de cada fórmula para aplicarla con
+                  confianza.</p>
+              </div>
+            </div>
+            <div class="card bg-info/10">
+              <div class="card-body">
+                <h3 class="card-title"> Material Exclusivo</h3>
+                <p>Acceso a bancos de ejercicios, resúmenes de fórmulas por tema y simulacros de parciales anteriores (Learning by solving).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold">Lo que lograremos</h3>
+          <ul class="space-y-2">
+            <li>• Claridad total en conceptos abstractos</li>
+            <li>• Agilidad en la resolución de problemas técnicos</li>
+            <li>• Mejora significativa en el promedio académico</li>
+            <li>• Técnicas de manejo de tiempo bajo presión de examen</li>
+            <li>• Reducción de la ansiedad ante las matemáticas y física</li>
+          </ul>
+        </div>
+      </div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Similares" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Similares</div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Reseñas" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Reseñas</div>
+    </div>
+    <div class="flex flex-row justify-center items-center mt-10">
+      <a class="btn btn-neutral" [routerLink]="['/tutorials']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Explorar otras tutorías
+      </a>
+    </div>
+  </div>
+</div>

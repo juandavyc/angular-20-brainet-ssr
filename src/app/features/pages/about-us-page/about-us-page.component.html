@@ -1,0 +1,68 @@
+<div class="flex justify-center my-5 mt-16">
+  <ui-title [title]="title" />
+</div>
+
+<section class="mx-auto container py-10 px-3">
+
+  <div class="flex md:flex-row flex-col gap-5">
+    <content-table (jumpTo)="scrollToElement($event)" />
+
+    <div class="bg-base-100 rounded-xl shadow-lg border-base-200 border-[1px] sm:p-10 p-3">
+      <div class="flex flex-col gap-5">
+        <div #mision>
+          <h3 class="text-2xl font-bold text-neutral mb-2">
+            <span class="text-sm mr-1 text-base-content/30">1.</span>
+            Misión
+          </h3>
+          <p class="text-base-content leading-relaxed">
+            Democratizar el acceso al conocimiento y al desarrollo de habilidades mediante un modelo de economía colaborativa, eliminando
+            las barreras económicas y empoderando a los estudiantes para que conviertan su talento en su principal moneda de cambio.
+          </p>
+        </div>
+        <div #vision>
+          <h3 class="text-2xl font-bold text-neutral mb-2">
+            <span class="text-sm mr-1 text-base-content/30">2.</span>
+            Visión
+          </h3>
+          <p class="text-base-content leading-relaxed">
+            Convertirnos en la red de intercambio de conocimientos más grande del mundo hispanohablante, transformando la educación
+            tradicional en un sistema dinámico, circular y accesible donde el aprendizaje sea un activo compartido y no un privilegio
+            financiero.
+          </p>
+        </div>
+        <h3 class="text-2xl font-bold text-neutral mb-2" #timeLine>
+          <span class="text-sm mr-1 text-base-content/30">3.</span>
+          Línea del Tiempo
+        </h3>
+        <time-line class="bg-base-200/45 py-10 rounded" />
+        <h3 class="text-2xl font-bold text-neutral mb-2" #commitment>
+          <span class="text-sm mr-1 text-base-content/30">4.</span>
+          Compromiso
+        </h3>
+        <p class="mb-4 text-base-content/80 italic">En BrainNet, nuestro trabajo se rige por cuatro pilares fundamentales:</p>
+        <ul class="space-y-4 text-base-content list-none pl-0">
+          <li class="flex gap-3 items-start">
+            <i class="fa-solid fa-circle-check text-neutral mt-1"></i>
+            <span><strong>Compromiso con la Equidad Educativa:</strong> Creemos que el conocimiento no debe estar limitado por el bolsillo
+              del estudiante.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <i class="fa-solid fa-circle-check text-neutral mt-1"></i>
+            <span><strong>Innovación en Economía Colaborativa:</strong> Perfeccionamos constantemente nuestro sistema de créditos para
+              asegurar un intercambio justo y motivador.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <i class="fa-solid fa-circle-check text-neutral mt-1"></i>
+            <span><strong>Empoderamiento del Talento Local:</strong> Brindamos una plataforma para que habilidades técnicas, académicas y
+              creativas sean valoradas y "monetizadas" desde el primer día.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <i class="fa-solid fa-circle-check text-neutral mt-1"></i>
+            <span><strong>Fomento de la Comunidad:</strong> No solo somos una app, somos un ecosistema que genera empleo indirecto y
+              desarrollo profesional a través de la colaboración mutua.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+<div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
+
+  <basic-form class="col-span-full" />
+  <advanced-form class="lg:order-1 order-2 md:col-span-2 lg:col-span-1" />
+
+  <div class="sm:order-1 md:order-1 lg:order-2 sm:col-span-2 md:col-span-2 lg:col-span-3 xl:grid-cols-4">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      @for (product of products; track $index ) {
+      <div class="card border border-base-200 hover:border-success hover:bg-base-100 shadow">
+        <figure>
+          <a [routerLink]="[product.linkUrl]" class="hover:opacity-75 block w-full aspect-[4/3] overflow-hidden group">
+            <dynamic-gradient [seed]="product.title" />
+          </a>
+        </figure>
+        <div class="card-body flex flex-col flex-grow sm:text-base text-lg p-3">
+          <h3 class=" text-base-content font-semibold">
+            <a [routerLink]="[product.linkUrl]" class="hover:text-pink-500">
+              {{product.title }}
+            </a>
+          </h3>
+          <p class="opacity-70">
+            {{product.description}}
+          </p>
+          <div class="border-t border-dashed text-neutral/45 h-[1px]"></div>
+          <div class="card-actions justify-end">
+            @for (badge of product.badges; track $index) {
+            <div class="badge badge-soft badge-secondary hover:font-bold">
+              {{badge}}
+            </div>
+            }
+          </div>
+          <div class="flex flex-row justify-end gap-1">
+            <a class="btn btn-sm btn-neutral" [routerLink]="[product.linkUrl]">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              Ver detalles
+            </a>
+          </div>
+        </div>
+      </div>
+
+      }
+      <div class="col-span-full">
+        <pagination />
+      </div>
+    </div>
+  </div>
+</div>

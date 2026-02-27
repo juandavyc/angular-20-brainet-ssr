@@ -1,0 +1,100 @@
+<div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+  <div class="col-span-full">
+    <div class="flex flex-row gap-3 justify-between">
+      <a class="btn btn-neutral" [routerLink]="['/tutorials']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Volver
+      </a>
+      <social-share />
+    </div>
+  </div>
+  <div class="col-span-full">
+    <div class="border-t border-dashed text-neutral/45 h-[1px] text-center"></div>
+  </div>
+  <div class="col-span-full">
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-semibold">
+      Idiomas y Conversación
+    </h1>
+  </div>
+
+  <dynamic-gradient [seed]="'Idiomas y Conversación'" class="w-full h-auto object-contain rounded-box shadow-sm" />
+
+  <buy-options />
+  <div class="col-span-full">
+    <div class="divider"></div>
+  </div>
+  <div class="col-span-full">
+    <div class="tabs tabs-lift">
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Descripción" checked="checked" />
+      <div class="tab-content bg-base-100 border-base-300 p-6">
+        <div class="flex flex-col gap-5">
+          <p class="whitespace-pre-line text-lg">
+            Practica <span class="font-semibold text-neutral">Speaking</span> en inglés, francés o alemán con compañeros de nivel avanzado.
+            Enfócate en la fluidez, pronunciación y pérdida del miedo al hablar en contextos reales y académicos.
+          </p>
+          <section class="flex flex-col justify-center items-center px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Ruta de Aprendizaje</h2>
+            <ul class="steps sm:steps-horizontal steps-vertical">
+              <li class="step step-neutral">
+                Nivelación Inicial
+              </li>
+              <li class="step step-neutral">
+                Vocabulario Clave
+              </li>
+              <li class="step step-neutral">
+                Sesiones de Speaking
+              </li>
+              <li class="step step-neutral">
+                Feedback Académico
+              </li>
+            </ul>
+          </section>
+
+          <h3 class="text-xl font-bold">Idiomas Disponibles</h3>
+          <ul class="list bg-neutral/10 rounded-box shadow-md">
+            <li class="list-row"><strong>Inglés:</strong> B1-C1 (FCE, CAE, TOEFL preparation)</li>
+            <li class="list-row"><strong>Francés:</strong> A2-B2 (DELF preparation)</li>
+            <li class="list-row"><strong>Alemán:</strong> A1-B1 (Goethe-Zertifikat)</li>
+            <li class="list-row"><strong>Metodología:</strong> 100% conversación guiada con correcciones inmediatas.</li>
+          </ul>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="card bg-info/10">
+              <div class="card-body">
+                <h3 class="card-title"> Globalidad</h3>
+                <p>Rompe las fronteras del idioma. Prepárate para becas internacionales, intercambios o simplemente para comunicarte mejor.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-info/10">
+              <div class="card-body">
+                <h3 class="card-title"> Speaking Puro</h3>
+                <p>Olvida la gramática tradicional por un momento. Nos centramos en que hables desde el minuto uno en un ambiente de
+                  confianza.</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold">¿Qué incluye cada sesión?</h3>
+          <ul class="space-y-2">
+            <li>• 60 minutos de conversación intensa</li>
+            <li>• Material de apoyo (PDF, links de interés)</li>
+            <li>• Glosario personalizado de la sesión</li>
+            <li>• Plan de mejora individualizado</li>
+            <li>• Acceso a grupos de práctica adicionales</li>
+          </ul>
+
+        </div>
+      </div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Similares" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Similares</div>
+      <input type="radio" name="my_tabs_1" class="tab" aria-label="Reseñas" disabled />
+      <div class="tab-content bg-base-100 border-base-300 p-6">Reseñas</div>
+    </div>
+    <div class="flex flex-row justify-center items-center mt-10">
+      <a class="btn btn-neutral" [routerLink]="['/tutorials']">
+        <i class="fa-solid fa-arrow-left"></i>
+        Explorar otras tutorías
+      </a>
+    </div>
+  </div>
+</div>

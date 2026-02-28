@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   imports: [
     UiTitleComponent,
     RouterLink,
-    DynamicGradientComponent,
+    // DynamicGradientComponent,
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',

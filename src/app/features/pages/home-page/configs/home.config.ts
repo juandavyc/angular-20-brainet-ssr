@@ -35,6 +35,14 @@ export const homeConfig = {
       "badges": ["Académico", "Fórmulas"]
     },
     {
+      "title": "Música",
+      "description": "Aprende teoría musical, instrumento y técnica vocal. Clases prácticas, lectura de partituras y preparación para presentaciones.",
+      "image": "/images/musica.png",
+      "linkText": "Ver tutores",
+      "linkUrl": "musica",
+      "badges": ["Artístico", "Creatividad"]
+    },
+    {
       "title": "Idiomas y Conversación",
       "description": "Practica Speaking en inglés, francés o alemán con compañeros de nivel avanzado.",
       "image": "/images/idiomas.png",
@@ -73,14 +81,6 @@ export const homeConfig = {
       "linkText": "Ver tutores",
       "linkUrl": "escritura",
       "badges": ["Investigación", "APA"]
-    },
-    {
-      "title": "Música e Instrumentos",
-      "description": "Clases de teoría musical, guitarra, piano o técnica vocal para todos los niveles.",
-      "image": "/images/musica.png",
-      "linkText": "Ver tutores",
-      "linkUrl": "musica",
-      "badges": ["Artes", "Talento"]
     },
     {
       "title": "Soft Skills y Liderazgo",

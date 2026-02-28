@@ -14,7 +14,7 @@ import { DynamicGradientComponent } from '@shared/ui/dynamic-gradient/dynamic-gr
     AdvancedFormComponent,
     PaginationComponent,
     RouterLink,
-    DynamicGradientComponent,
+    // DynamicGradientComponent,
   ],
   templateUrl: './products-page.component.html',
   styleUrl: './products-page.component.css',

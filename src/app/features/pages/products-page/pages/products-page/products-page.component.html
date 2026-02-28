@@ -8,8 +8,8 @@
       @for (product of products; track $index ) {
       <div class="card border border-base-200 hover:border-success hover:bg-base-100 shadow">
         <figure>
-          <a [routerLink]="[product.linkUrl]" class="hover:opacity-75 block w-full aspect-[4/3] overflow-hidden group">
-            <dynamic-gradient [seed]="product.title" />
+          <a [routerLink]="[product.linkUrl]" class="hover:opacity-75 block w-full overflow-hidden group">
+            <img [src]="product.image" class="max-h-[200px] w-full" alt="Rooms" />
           </a>
         </figure>
         <div class="card-body flex flex-col flex-grow sm:text-base text-lg p-3">

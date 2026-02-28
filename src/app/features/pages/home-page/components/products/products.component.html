@@ -8,7 +8,7 @@
       <div class="card bg-base-100 shadow-sm" data-aos="fade-up">
         <figure>
           <a [routerLink]="['/tutorials/'+product.linkUrl]" class="hover:opacity-75 block w-full aspect-[4/3] overflow-hidden rounded-t-xl group">
-            <dynamic-gradient [seed]="product.title" />
+             <img [src]="product.image" class="max-h-[260px] w-full" alt="Rooms" />
           </a>
         </figure>
         <div class="card-body">

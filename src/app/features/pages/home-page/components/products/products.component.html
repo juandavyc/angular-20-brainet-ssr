@@ -7,7 +7,7 @@
       @for (product of products; track $index) {
       <div class="card bg-base-100 shadow-sm" data-aos="fade-up">
         <figure>
-          <a [routerLink]="[product.linkUrl]" class="hover:opacity-75 block w-full aspect-[4/3] overflow-hidden rounded-t-xl group">
+          <a [routerLink]="['/tutorials/'+product.linkUrl]" class="hover:opacity-75 block w-full aspect-[4/3] overflow-hidden rounded-t-xl group">
             <dynamic-gradient [seed]="product.title" />
           </a>
         </figure>
@@ -27,9 +27,9 @@
             }
           </div>
           <div class="card-actions justify-end">
-            <a [routerLink]="['/products', product.linkUrl]" class="btn btn-neutral" data-aos="fade-right">
+            <a [routerLink]="['/tutorials', product.linkUrl]" class="btn btn-neutral" data-aos="fade-right">
               <i class="fa-solid fa-arrow-right-long"></i>
-              {{product.linkText}}
+              Ir a la Tutoría
             </a>
           </div>
         </div>
